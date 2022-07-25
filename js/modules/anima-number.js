@@ -15,8 +15,7 @@ export default function initAnimateNumber() {
           number.innerText = total;
           clearInterval(timer);
         }
-      }, 25 * Math.random());
-      console.log(total);
+      }, 25);
     });
   }
   
