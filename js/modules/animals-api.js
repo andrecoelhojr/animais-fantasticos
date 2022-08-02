@@ -23,5 +23,5 @@ export default function initAnimailsApi() {
     return div;
   }
   
-  animalsApi("../animalsapi.json"); 
+  animalsApi("./animalsapi.json"); 
 }
