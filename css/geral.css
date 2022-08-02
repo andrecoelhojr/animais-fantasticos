@@ -324,3 +324,10 @@ body {
 [data-week].active::after {
   background-color: #3f4;
 }
+
+.btcPrice {
+  background: #3f4;
+  padding: .2rem .5rem;
+  font-weight: bold;
+  border-radius: 2px;
+}

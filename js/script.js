@@ -8,6 +8,8 @@ import initDropDownMenu from "./modules/dropdown-menu.js";
 import initMenuMobile from "./modules/menu-mobile.js";
 import initAnimateNumber from "./modules/anima-number.js";
 import initOperation from "./modules/operation.js";
+import initAnimailsApi from "./modules/animals-api.js";
+import initBTC from "./modules/bitcoinapi.js";
 
 initScrollSoft();
 initAnimateScroll();
@@ -19,3 +21,5 @@ initDropDownMenu();
 initMenuMobile();
 initAnimateNumber();
 initOperation();
+initAnimailsApi();
+initBTC();
