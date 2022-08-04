@@ -1,33 +1,34 @@
 export default function initAnimateNumber() {
   function animateNumbers() {
-    const numbers = document.querySelectorAll("[data-numero");
-  
-    numbers.forEach(number => {
+    const numbers = document.querySelectorAll('[data-numero');
+
+    numbers.forEach((number) => {
       const total = +number.innerText;
       const increment = Math.floor(total / 100);
-    
+
       let start = 0;
       const timer = setInterval(() => {
-        start = start + increment;
-    
+        start += increment;
+
         number.innerText = start;
-        if(start > total) {
+        if (start > total) {
           number.innerText = total;
           clearInterval(timer);
         }
       }, 25);
     });
   }
-  
+
+  let observer;
   function handleMutation(mutation) {
-    if(mutation[0].target.classList.contains("ativo")) {
+    if (mutation[0].target.classList.contains('ativo')) {
       observer.disconnect();
       animateNumbers();
     }
   }
-  
-  const observerTarget = document.querySelector(".numeros");
-  const observer = new MutationObserver(handleMutation);
-  
-  observer.observe(observerTarget, {attributes: true});
+  observer = new MutationObserver(handleMutation);
+
+  const observerTarget = document.querySelector('.numeros');
+
+  observer.observe(observerTarget, { attributes: true });
 }
