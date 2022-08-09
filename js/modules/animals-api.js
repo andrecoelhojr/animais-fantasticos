@@ -1,4 +1,4 @@
-import initAnimateNumber from './anima-number.js';
+import AnimateNumber from './anima-number.js';
 
 export default function initAnimailsApi() {
   function createAnimal(animal) {
@@ -17,7 +17,9 @@ export default function initAnimailsApi() {
         const divAnimal = createAnimal(animal);
         divAnimals.appendChild(divAnimal);
       });
-      initAnimateNumber();
+
+      const animaNumber = new AnimateNumber('[data-numero', '.numeros', 'ativo');
+      animaNumber.init();
     } catch (error) {
       console.log(Error(error));
     }

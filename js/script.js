@@ -5,7 +5,6 @@ import Modal from './modules/modal.js';
 import Tooltip from './modules/tooltip.js';
 import initDropDownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
-import initAnimateNumber from './modules/anima-number.js';
 import initOperation from './modules/operation.js';
 import initAnimailsApi from './modules/animals-api.js';
 import initBTC from './modules/bitcoinapi.js';
@@ -28,7 +27,6 @@ tooltip.init();
 
 initDropDownMenu();
 initMenuMobile();
-initAnimateNumber();
 initOperation();
 initAnimailsApi();
 initBTC();
