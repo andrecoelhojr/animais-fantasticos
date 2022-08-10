@@ -1,9 +1,8 @@
-export default function initBTC() {
-  const span = document.querySelector('.btcPrice');
-
-  fetch('https://blockchain.info/ticker')
+export default function fetchBitcoin(url, target) {
+  fetch(url)
     .then((resp) => resp.json())
     .then((json) => {
+      const span = document.querySelector(target);
       const price = (1000 / json.BRL.sell).toFixed(4);
       span.innerText = price;
     }).catch((error) => {
