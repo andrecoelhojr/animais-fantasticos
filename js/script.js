@@ -9,6 +9,7 @@ import Operation from './modules/operation.js';
 import fetchAnimals from './modules/animals-api.js';
 import fetchBitcoin from './modules/bitcoinapi.js';
 import AnimateScroll from './modules/scroll-animation.js';
+import SlideNav from './modules/slidenav.js';
 
 const scrollsoft = new ScrollSoft('[data-menu="suave"] a[href^="#"');
 scrollsoft.init();
@@ -40,3 +41,8 @@ operation.init();
 fetchAnimals('../../animalsapi.json', '.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker', '.btcPrice');
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+
+slide.init();
+slide.addControl('.custom-controls');
