@@ -38,7 +38,7 @@ menuMobile.init();
 const operation = new Operation('[data-week]', 'active');
 operation.init();
 
-fetchAnimals('./animalsapi.json', '.numeros-grid');
+fetchAnimals('../../animalsapi.json', '.numeros-grid');
 
 fetchBitcoin('https://blockchain.info/ticker', '.btcPrice');
 
