@@ -3,7 +3,7 @@
 ## Projeto desenvolvido no curso JavaScript Completo ES6+ da origamid
 
 <h4 align="center"> 
-	🚧  Construção...  🚧
+	🚧  Finalizado...  🚧
 </h4>
 
 ### 🛠 Tecnologias
